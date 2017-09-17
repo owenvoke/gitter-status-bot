@@ -12,4 +12,5 @@ class Statuses
     public const EXPERIENCING_ISSUES = 'Experiencing Issues';
     public const OFFLINE = 'Offline';
     public const UNKNOWN = 'Unknown';
+    public const NO_STATUS = 'No status message provided';
 }
