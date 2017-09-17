@@ -83,9 +83,14 @@ class Bot
 
     /**
      * Post the status to Gitter
+     * @throws \Exception
      */
     public function postToGitter()
     {
+        if (!$this->info['status']) {
+            throw new \Exception(Statuses::NO_STATUS);
+        }
+
         try {
             $this->gitter->messages->create(
                 getenv('GITTER_ROOM'),
