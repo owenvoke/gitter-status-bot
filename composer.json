@@ -1,0 +1,14 @@
+{
+  "name": "pxgamer/gitter-status-bot",
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "pxgamer\\GitterStatusBot\\": "src/"
+    }
+  },
+  "require": {
+    "ckdarby/php-uptimerobot": "^0.1.0",
+    "serafim/gitter-api": "^4.0",
+    "vlucas/phpdotenv": "^2.4.0"
+  }
+}
