@@ -1,5 +1,6 @@
 {
   "name": "pxgamer/gitter-status-bot",
+  "description": "A webhook for posting UptimeRobot statuses to Gitter.",
   "license": "MIT",
   "autoload": {
     "psr-4": {
