@@ -7,8 +7,7 @@ use Gitter\Client as Gitter;
 use UptimeRobot\API as UptimeRobot;
 
 /**
- * Class Bot
- * @package pxgamer\GitterStatusBot
+ * Class Bot.
  */
 class Bot
 {
@@ -30,6 +29,7 @@ class Bot
 
     /**
      * Bot constructor.
+     *
      * @param string $dotEnvPath
      */
     public function __construct(string $dotEnvPath)
@@ -50,7 +50,8 @@ class Bot
     }
 
     /**
-     * Check the status from UptimeRobot
+     * Check the status from UptimeRobot.
+     *
      * @throws \Exception | \Throwable
      */
     public function checkUptime()
@@ -79,11 +80,11 @@ class Bot
     }
 
     /**
-     * Post the status to Gitter
+     * Post the status to Gitter.
+     *
      * @throws \Exception | \Throwable
      */
-    public
-    function postToGitter()
+    public function postToGitter()
     {
         if (!$this->info['status']) {
             throw new \Exception(Statuses::NO_STATUS);

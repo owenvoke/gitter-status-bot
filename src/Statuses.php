@@ -3,8 +3,7 @@
 namespace pxgamer\GitterStatusBot;
 
 /**
- * Class Statuses
- * @package pxgamer\GitterStatusBot
+ * Class Statuses.
  */
 class Statuses
 {
