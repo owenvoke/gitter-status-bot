@@ -2,9 +2,9 @@
 
 use pxgamer\GitterStatusBot\Bot;
 
-require __DIR__ . '/../vendor/autoload.php';
+require __DIR__.'/../vendor/autoload.php';
 
-$bot = new Bot(__DIR__ . '/..');
+$bot = new Bot(__DIR__.'/..');
 
 try {
     $bot->checkUptime();
