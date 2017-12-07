@@ -4,19 +4,14 @@ All notable changes to `gitter-status-bot` will be documented in this file.
 
 Updates should follow the [Keep a CHANGELOG](http://keepachangelog.com/) principles.
 
-## NEXT - YYYY-MM-DD
+## v1.0.1 - 2017-12-07
 
 ### Added
-- Nothing
+- Added missing files
+- Added LICENSE
+- Added testing
 
-### Deprecated
-- Nothing
+## v1.0.0 - 2017-09-17
 
-### Fixed
-- Nothing
-
-### Removed
-- Nothing
-
-### Security
-- Nothing
+### Added
+- Initial release
