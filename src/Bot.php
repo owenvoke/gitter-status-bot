@@ -11,6 +11,10 @@ use UptimeRobot\API as UptimeRobot;
  */
 class Bot
 {
+    public const STATUS_ONLINE = 2;
+    public const STATUS_EXPERIENCING_ISSUES = 8;
+    public const STATUS_OFFLINE = 9;
+
     /**
      * @var Gitter
      */
@@ -64,13 +68,13 @@ class Bot
             $status = null;
         }
         switch ($status) {
-            case 2:
+            case self::STATUS_ONLINE:
                 $this->info['status'] = Statuses::ONLINE;
                 break;
-            case 8:
+            case self::STATUS_EXPERIENCING_ISSUES:
                 $this->info['status'] = Statuses::EXPERIENCING_ISSUES;
                 break;
-            case 9:
+            case self::STATUS_OFFLINE:
                 $this->info['status'] = Statuses::OFFLINE;
                 break;
             default:
